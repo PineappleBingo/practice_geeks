@@ -55,4 +55,26 @@ class Solution:
             # index pulled-foward
             A.pop(0)
             A.append(tempArray[i])
-       
+        
+
+        # second attemp
+        
+        #Your code here
+        # check if D > N.
+        # If so, the case when N - D < 0 that D is go over the N
+        Round = N - D
+        
+        if Round < 0:
+            Round = abs(Round)
+        else:
+            Round = D
+        
+        # tempArray = [ A[i] for i in range(Round)]
+        tempArray = A
+        
+        
+        for i in range(Round):
+            # remove first element from array
+            # index pulled-foward
+            A.append(tempArray[i])
+            A.pop(0)
